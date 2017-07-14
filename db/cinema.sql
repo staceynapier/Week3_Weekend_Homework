@@ -5,13 +5,13 @@ DROP TABLE if EXISTS films;
 CREATE TABLE customers(
   id SERIAL4 PRIMARY KEY,
   name VARCHAR(255),
-  funds INT2
+  funds MONEY
 );
 
 CREATE TABLE films(
   id SERIAL4 PRIMARY KEY,
   title VARCHAR(255),
-  price INT2
+  price MONEY
 );
 
 CREATE TABLE tickets(
